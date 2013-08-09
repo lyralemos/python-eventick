@@ -5,7 +5,7 @@ from distutils.core import setup
 setup(name='python-eventick',
       version='0.1',
       description='Python Eventick Library',
-      long_description=open("README.rst").read(),
+      long_description=open("README.md").read(),
       classifiers=[
         "Programming Language :: Python",
       ],

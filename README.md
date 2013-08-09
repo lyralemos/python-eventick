@@ -7,9 +7,15 @@ Instalação
 ----------
 
 ```
+pip install python-eventick
+```
+
+ou
+
+```
 git clone https://github.com/lyralemos/python-eventick.git
 cd python-eventick
-python sety.py install
+python setuy.py install
 ```
 
 Exemplo
