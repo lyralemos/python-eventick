@@ -24,7 +24,7 @@ Exemplo
 ```python
 from eventick import Eventick
 
-eventickAPI = EVentick('username@email.com','password')
+eventickAPI = Eventick('username@email.com','password')
 eventos = eventickAPI.events() #lista de eventos
 ```
 Documentação
@@ -33,7 +33,7 @@ Documentação
 ###API(autenticação)
 Ao instanciar um objeto Eventick será realizada a autenticação
 ```python
-eventickAPI = EVentick('username@email.com','password')
+eventickAPI = Eventick('username@email.com','password')
 ```
 ###events()
 Lista de todos os eventos.
