@@ -15,7 +15,7 @@ ou
 ```
 git clone https://github.com/lyralemos/python-eventick.git
 cd python-eventick
-python setuy.py install
+python setup.py install
 ```
 
 Exemplo

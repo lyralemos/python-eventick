@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(name='python-eventick',
-      version='0.1',
+      version='0.2',
       description='Python Eventick Library',
       long_description=open("README.md").read(),
       classifiers=[
@@ -13,6 +13,11 @@ setup(name='python-eventick',
       author='Alexandre Marinho',
       author_email='alexandre.marinho@nti.ufal.br',
       url='http://www.github.com/lyralemos/python-eventick',
-      packages=['eventick'],
+      packages=find_packages(),
+      package_data = {
+        '': ['README.md']
+      },
+      include_package_data=True,
+      zip_safe=False,
       install_requires=['requests'],
      )
