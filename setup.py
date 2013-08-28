@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 setup(name='python-eventick',
       version='0.2',
       description='Python Eventick Library',
-      long_description=open("README.md").read(),
+      long_description=open("README.rst").read(),
       classifiers=[
         "Programming Language :: Python",
       ],
