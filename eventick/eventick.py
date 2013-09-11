@@ -1,5 +1,7 @@
 import requests
 
+from datetime import datetime
+
 class Eventick(object):
 
 	token = None
@@ -45,8 +47,9 @@ class Eventick(object):
 
 	def checkin(self,event_id,code,time=None):
 		params = {}
-		if time is not None:
-			params['checked_at'] = time.strftime('%Y-%m-%dT%H:%M:%S-03:00')
+		if time is None:
+			time = datetime.now()
+		params['checked_at'] = time.strftime('%Y-%m-%dT%H:%M:%S-03:00')
 
 		return self.request('events/%s/attendees/%s' % (event_id,code),method='put',params=params)
 
